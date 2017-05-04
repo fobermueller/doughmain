@@ -4,7 +4,7 @@ Vagrant.configure("2") do |c|
   c.vm.hostname = "default-ubuntu-1404.vagrantup.com"
   c.vm.network(:private_network, {:ip=>"192.168.34.34"})
   c.vm.synced_folder ".", "/vagrant", disabled: true
-  c.vm.synced_folder "/home/fredobermueller/.kitchen/cache", "/tmp/omnibus/cache", create: true
+  c.vm.synced_folder "/home/fobermueller/.kitchen/cache", "/tmp/omnibus/cache", create: true
   c.vm.provider :virtualbox do |p|
   end
 end

@@ -1,337 +1,56 @@
-I, [2017-05-03T17:12:18.195257 #7295]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
-I, [2017-05-03T17:12:18.197213 #7295]  INFO -- default-ubuntu-1404: Preparing files for transfer
-I, [2017-05-03T17:12:18.197648 #7295]  INFO -- default-ubuntu-1404: Preparing dna.json
-I, [2017-05-03T17:12:18.198518 #7295]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.6.4...
-I, [2017-05-03T17:12:25.458277 #7295]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
-I, [2017-05-03T17:12:25.479818 #7295]  INFO -- default-ubuntu-1404: Preparing data_bags
-I, [2017-05-03T17:12:25.480849 #7295]  INFO -- default-ubuntu-1404: Preparing validation.pem
-I, [2017-05-03T17:12:25.498629 #7295]  INFO -- default-ubuntu-1404: Preparing client.rb
-I, [2017-05-03T17:12:26.280036 #7295]  INFO -- default-ubuntu-1404: -----> Chef Omnibus installation detected (install only if missing)
-I, [2017-05-03T17:12:26.327783 #7295]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
-I, [2017-05-03T17:12:46.846972 #7295]  INFO -- default-ubuntu-1404: Starting Chef Client, version 13.0.118
-I, [2017-05-03T17:12:48.734224 #7295]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["java", "lamp::default", "tomcat8::default"]
-I, [2017-05-03T17:12:50.516732 #7295]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
-I, [2017-05-03T17:12:50.530827 #7295]  INFO -- default-ubuntu-1404:   - lamp (0.1.0)
-I, [2017-05-03T17:12:50.554583 #7295]  INFO -- default-ubuntu-1404:   - tomcat8 (0.1.0)
-I, [2017-05-03T17:12:50.560187 #7295]  INFO -- default-ubuntu-1404:   - java (1.49.0)
-I, [2017-05-03T17:12:50.571837 #7295]  INFO -- default-ubuntu-1404:   - mysql2_chef_gem (2.0.1)
-I, [2017-05-03T17:12:50.575197 #7295]  INFO -- default-ubuntu-1404:   - apt (6.1.0)
-I, [2017-05-03T17:12:50.578330 #7295]  INFO -- default-ubuntu-1404:   - windows (3.0.5)
-I, [2017-05-03T17:12:50.582159 #7295]  INFO -- default-ubuntu-1404:   - homebrew (4.1.0)
-I, [2017-05-03T17:12:50.609277 #7295]  INFO -- default-ubuntu-1404:   - build-essential (8.0.1)
-I, [2017-05-03T17:12:50.612637 #7295]  INFO -- default-ubuntu-1404:   - httpd (0.4.5)
-I, [2017-05-03T17:12:50.621767 #7295]  INFO -- default-ubuntu-1404:   - ohai (5.0.4)
-I, [2017-05-03T17:12:50.626838 #7295]  INFO -- default-ubuntu-1404:   - mysql (8.3.1)
-I, [2017-05-03T17:12:50.631781 #7295]  INFO -- default-ubuntu-1404:   - database (6.1.1)
-I, [2017-05-03T17:12:50.649769 #7295]  INFO -- default-ubuntu-1404:   - seven_zip (2.0.2)
-I, [2017-05-03T17:12:50.655789 #7295]  INFO -- default-ubuntu-1404:   - compat_resource (12.19.0)
-I, [2017-05-03T17:12:50.666540 #7295]  INFO -- default-ubuntu-1404:   - mariadb (1.5.1)
-I, [2017-05-03T17:12:50.677840 #7295]  INFO -- default-ubuntu-1404:   - yum-epel (2.1.1)
-I, [2017-05-03T17:12:50.684107 #7295]  INFO -- default-ubuntu-1404:   - inifile_chef_gem (0.1.0)
-I, [2017-05-03T17:12:50.685853 #7295]  INFO -- default-ubuntu-1404:   - postgresql (6.1.1)
-I, [2017-05-03T17:12:50.687776 #7295]  INFO -- default-ubuntu-1404:   - selinux_policy (2.0.1)
-I, [2017-05-03T17:12:50.689537 #7295]  INFO -- default-ubuntu-1404:   - mingw (2.0.1)
-I, [2017-05-03T17:12:50.690767 #7295]  INFO -- default-ubuntu-1404:   - yum (5.0.1)
-I, [2017-05-03T17:12:50.691363 #7295]  INFO -- default-ubuntu-1404:   - openssl (7.0.1)
-I, [2017-05-03T17:12:50.691868 #7295]  INFO -- default-ubuntu-1404:   - yum-scl (0.2.0)
-I, [2017-05-03T17:12:50.696125 #7295]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
-I, [2017-05-03T17:12:50.980828 #7295]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
-I, [2017-05-03T17:12:51.699241 #7295]  INFO -- default-ubuntu-1404: Converging 23 resources
-I, [2017-05-03T17:12:51.701788 #7295]  INFO -- default-ubuntu-1404: Recipe: java::notify
-I, [2017-05-03T17:12:51.704634 #7295]  INFO -- default-ubuntu-1404:   * log[jdk-version-changed] action nothing (skipped due to action :nothing)
-I, [2017-05-03T17:12:51.706202 #7295]  INFO -- default-ubuntu-1404: Recipe: java::set_java_home
-I, [2017-05-03T17:12:51.709183 #7295]  INFO -- default-ubuntu-1404:   * directory[/etc/profile.d] action create (up to date)
-I, [2017-05-03T17:12:51.723942 #7295]  INFO -- default-ubuntu-1404:   * template[/etc/profile.d/jdk.sh] action create (up to date)
-I, [2017-05-03T17:12:51.724779 #7295]  INFO -- default-ubuntu-1404: Recipe: java::oracle
-I, [2017-05-03T17:12:51.797347 #7295]  INFO -- default-ubuntu-1404:   * apt_package[tar] action install (up to date)
-I, [2017-05-03T17:12:51.803951 #7295]  INFO -- default-ubuntu-1404:   * java_ark[jdk] action install
-I, [2017-05-03T17:12:56.803398 #7295]  INFO -- default-ubuntu-1404:     * java_alternatives[set-java-alternatives] action set (up to date)
-I, [2017-05-03T17:12:56.803517 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:12:56.803552 #7295]  INFO -- default-ubuntu-1404: Recipe: java::default_java_symlink
-I, [2017-05-03T17:12:56.806928 #7295]  INFO -- default-ubuntu-1404:   * link[/usr/lib/jvm/default-java] action create (up to date)
-I, [2017-05-03T17:12:56.809113 #7295]  INFO -- default-ubuntu-1404: Recipe: lamp::default
-I, [2017-05-03T17:12:56.812814 #7295]  INFO -- default-ubuntu-1404:   * apt_update[daily] action periodic (up to date)
-I, [2017-05-03T17:12:56.814592 #7295]  INFO -- default-ubuntu-1404: Recipe: lamp::web
-I, [2017-05-03T17:12:56.815860 #7295]  INFO -- default-ubuntu-1404:   * directory[/var/www/default/public_html] action create (up to date)
-I, [2017-05-03T17:12:56.860839 #7295]  INFO -- default-ubuntu-1404:   * httpd_config_debian[default] action create
-I, [2017-05-03T17:12:56.881890 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/conf-available] action create (up to date)
-I, [2017-05-03T17:12:56.884887 #7295]  INFO -- default-ubuntu-1404:     * template[/etc/apache2-default/conf-available/default.conf] action create (up to date)
-I, [2017-05-03T17:12:56.889016 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/conf-enabled] action create (up to date)
-I, [2017-05-03T17:12:56.893059 #7295]  INFO -- default-ubuntu-1404:     * link[/etc/apache2-default/conf-enabled/default.conf] action create (up to date)
-I, [2017-05-03T17:12:56.894011 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:12:56.978601 #7295]  INFO -- default-ubuntu-1404:   * httpd_service_debian_sysvinit[default] action create
-I, [2017-05-03T17:12:57.045204 #7295]  INFO -- default-ubuntu-1404:     * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:57.141670 #7295]  INFO -- default-ubuntu-1404:     * service[apache2] action stop (up to date)
-I, [2017-05-03T17:12:57.235046 #7295]  INFO -- default-ubuntu-1404:     * service[apache2] action disable (up to date)
-I, [2017-05-03T17:12:57.244299 #7295]  INFO -- default-ubuntu-1404:     * directory[/var/cache/apache2-default] action create (up to date)
-I, [2017-05-03T17:12:57.254925 #7295]  INFO -- default-ubuntu-1404:     * directory[/var/log/apache2-default] action create (up to date)
-I, [2017-05-03T17:12:57.265234 #7295]  INFO -- default-ubuntu-1404:     * directory[/var/run/apache2] action create (up to date)
-I, [2017-05-03T17:12:57.277405 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default] action create (up to date)
-I, [2017-05-03T17:12:57.286577 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/conf-available] action create (up to date)
-I, [2017-05-03T17:12:57.296129 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/conf-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.307999 #7295]  INFO -- default-ubuntu-1404:     * directory[/var/lock/apache2-default] action create (up to date)
-I, [2017-05-03T17:12:57.319772 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:57.329930 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.341445 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/sites-available] action create (up to date)
-I, [2017-05-03T17:12:57.354230 #7295]  INFO -- default-ubuntu-1404:     * directory[/etc/apache2-default/sites-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.368504 #7295]  INFO -- default-ubuntu-1404:     * template[/etc/apache2-default/envvars] action create (up to date)
-I, [2017-05-03T17:12:57.382714 #7295]  INFO -- default-ubuntu-1404:     * template[/usr/sbin/a2enmod] action create (up to date)
-I, [2017-05-03T17:12:57.408816 #7295]  INFO -- default-ubuntu-1404:     * link[/usr/sbin/a2enmod_name] action create (skipped due to not_if)
-I, [2017-05-03T17:12:57.450022 #7295]  INFO -- default-ubuntu-1404:     * link[/usr/sbin/a2dismod_name] action create (skipped due to not_if)
-I, [2017-05-03T17:12:57.472155 #7295]  INFO -- default-ubuntu-1404:     * link[/usr/sbin/a2ensite_name] action create (skipped due to not_if)
-I, [2017-05-03T17:12:57.516079 #7295]  INFO -- default-ubuntu-1404:     * link[/usr/sbin/a2dissite_name] action create (skipped due to not_if)
-I, [2017-05-03T17:12:57.528805 #7295]  INFO -- default-ubuntu-1404:     * template[/etc/apache2-default/mime.types] action create (up to date)
-I, [2017-05-03T17:12:57.532961 #7295]  INFO -- default-ubuntu-1404:     * file[/etc/apache2-default/ports.conf] action delete (up to date)
-I, [2017-05-03T17:12:57.546943 #7295]  INFO -- default-ubuntu-1404:     * template[/etc/apache2-default/apache2.conf] action create (up to date)
-I, [2017-05-03T17:12:57.618786 #7295]  INFO -- default-ubuntu-1404:     * apt_package[apache2-mpm-prefork] action install (up to date)
-I, [2017-05-03T17:12:57.664662 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[mpm_prefork] action create
-I, [2017-05-03T17:12:57.733436 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:57.743543 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:57.751427 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.764708 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/mpm_prefork.load] action create (up to date)
-I, [2017-05-03T17:12:57.778521 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/mpm_prefork.load] action create (up to date)
-I, [2017-05-03T17:12:57.780096 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:57.787975 #7295]  INFO -- default-ubuntu-1404:     * httpd_config_debian[mpm_prefork] action create
-I, [2017-05-03T17:12:57.795262 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/conf-available] action create (up to date)
-I, [2017-05-03T17:12:57.811309 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/conf-available/mpm_prefork.conf] action create (up to date)
-I, [2017-05-03T17:12:57.820706 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/conf-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.827253 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/conf-enabled/mpm_prefork.conf] action create (up to date)
-I, [2017-05-03T17:12:57.828116 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:57.832429 #7295]  INFO -- default-ubuntu-1404:     * httpd_config_debian[mpm_worker] action delete
-I, [2017-05-03T17:12:57.835712 #7295]  INFO -- default-ubuntu-1404:       * file[/etc/apache2-default/conf-available/mpm_worker.conf] action delete (up to date)
-I, [2017-05-03T17:12:57.846459 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/conf-enabled/mpm_worker.conf] action delete (up to date)
-I, [2017-05-03T17:12:57.847410 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:57.848342 #7295]  INFO -- default-ubuntu-1404:     * httpd_config_debian[mpm_event] action delete
-I, [2017-05-03T17:12:57.856674 #7295]  INFO -- default-ubuntu-1404:       * file[/etc/apache2-default/conf-available/mpm_event.conf] action delete (up to date)
-I, [2017-05-03T17:12:57.860157 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/conf-enabled/mpm_event.conf] action delete (up to date)
-I, [2017-05-03T17:12:57.861319 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:57.869317 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[authz_core] action create
-I, [2017-05-03T17:12:57.940493 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:57.951553 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:57.964159 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:57.980747 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/authz_core.load] action create (up to date)
-I, [2017-05-03T17:12:57.988206 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/authz_core.load] action create (up to date)
-I, [2017-05-03T17:12:57.991460 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.000816 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[authz_host] action create
-I, [2017-05-03T17:12:58.071247 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.083627 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.094116 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.109493 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/authz_host.load] action create (up to date)
-I, [2017-05-03T17:12:58.118781 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/authz_host.load] action create (up to date)
-I, [2017-05-03T17:12:58.121388 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.129668 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[authn_core] action create
-I, [2017-05-03T17:12:58.197796 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.208391 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.216676 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.228517 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/authn_core.load] action create (up to date)
-I, [2017-05-03T17:12:58.234565 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/authn_core.load] action create (up to date)
-I, [2017-05-03T17:12:58.238268 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.244999 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[auth_basic] action create
-I, [2017-05-03T17:12:58.314851 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.326946 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.340027 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.350445 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/auth_basic.load] action create (up to date)
-I, [2017-05-03T17:12:58.354751 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/auth_basic.load] action create (up to date)
-I, [2017-05-03T17:12:58.356430 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.364146 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[access_compat] action create
-I, [2017-05-03T17:12:58.431314 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.446623 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.452116 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.469111 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/access_compat.load] action create (up to date)
-I, [2017-05-03T17:12:58.471557 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/access_compat.load] action create (up to date)
-I, [2017-05-03T17:12:58.473482 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.481482 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[authn_file] action create
-I, [2017-05-03T17:12:58.549691 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.559854 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.573253 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.592203 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/authn_file.load] action create (up to date)
-I, [2017-05-03T17:12:58.599357 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/authn_file.load] action create (up to date)
-I, [2017-05-03T17:12:58.602476 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.611849 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[authz_user] action create
-I, [2017-05-03T17:12:58.677226 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.686624 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.695695 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.716976 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/authz_user.load] action create (up to date)
-I, [2017-05-03T17:12:58.717974 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/authz_user.load] action create (up to date)
-I, [2017-05-03T17:12:58.718933 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.721909 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[alias] action create
-I, [2017-05-03T17:12:58.788687 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.804994 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.808365 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.827057 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/alias.load] action create (up to date)
-I, [2017-05-03T17:12:58.828592 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/alias.load] action create (up to date)
-I, [2017-05-03T17:12:58.830213 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.838518 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[dir] action create
-I, [2017-05-03T17:12:58.904809 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:58.915421 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:58.925431 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:58.939872 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/dir.load] action create (up to date)
-I, [2017-05-03T17:12:58.944878 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/dir.load] action create (up to date)
-I, [2017-05-03T17:12:58.946402 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:58.957756 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[autoindex] action create
-I, [2017-05-03T17:12:59.029751 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.042994 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.061798 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.071876 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/autoindex.load] action create (up to date)
-I, [2017-05-03T17:12:59.075806 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/autoindex.load] action create (up to date)
-I, [2017-05-03T17:12:59.076938 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.084512 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[env] action create
-I, [2017-05-03T17:12:59.150080 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.157822 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.166531 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.183220 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/env.load] action create (up to date)
-I, [2017-05-03T17:12:59.187769 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/env.load] action create (up to date)
-I, [2017-05-03T17:12:59.190009 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.195801 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[mime] action create
-I, [2017-05-03T17:12:59.260337 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.267326 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.277735 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.290565 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/mime.load] action create (up to date)
-I, [2017-05-03T17:12:59.295730 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/mime.load] action create (up to date)
-I, [2017-05-03T17:12:59.297361 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.305996 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[negotiation] action create
-I, [2017-05-03T17:12:59.372395 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.384019 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.389096 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.402043 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/negotiation.load] action create (up to date)
-I, [2017-05-03T17:12:59.406848 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/negotiation.load] action create (up to date)
-I, [2017-05-03T17:12:59.412585 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.417414 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[setenvif] action create
-I, [2017-05-03T17:12:59.485540 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.499117 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.504457 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.518652 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/setenvif.load] action create (up to date)
-I, [2017-05-03T17:12:59.525119 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/setenvif.load] action create (up to date)
-I, [2017-05-03T17:12:59.527570 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.532985 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[filter] action create
-I, [2017-05-03T17:12:59.597991 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.605921 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.613872 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.632740 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/filter.load] action create (up to date)
-I, [2017-05-03T17:12:59.638147 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/filter.load] action create (up to date)
-I, [2017-05-03T17:12:59.639190 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.643118 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[deflate] action create
-I, [2017-05-03T17:12:59.706988 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.714673 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.725405 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.741387 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/deflate.load] action create (up to date)
-I, [2017-05-03T17:12:59.751526 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/deflate.load] action create (up to date)
-I, [2017-05-03T17:12:59.754423 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.763807 #7295]  INFO -- default-ubuntu-1404:     * httpd_module_debian[status] action create
-I, [2017-05-03T17:12:59.829882 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apache2] action install (up to date)
-I, [2017-05-03T17:12:59.838840 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-available] action create (up to date)
-I, [2017-05-03T17:12:59.846029 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apache2-default/mods-enabled] action create (up to date)
-I, [2017-05-03T17:12:59.858723 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apache2-default/mods-available/status.load] action create (up to date)
-I, [2017-05-03T17:12:59.865043 #7295]  INFO -- default-ubuntu-1404:       * link[/etc/apache2-default/mods-enabled/status.load] action create (up to date)
-I, [2017-05-03T17:12:59.869807 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:12:59.872101 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:12:59.877897 #7295]  INFO -- default-ubuntu-1404:   * httpd_service_debian_sysvinit[default] action start
-I, [2017-05-03T17:12:59.891189 #7295]  INFO -- default-ubuntu-1404:     * template[/etc/init.d/apache2-default] action create (up to date)
-I, [2017-05-03T17:12:59.991010 #7295]  INFO -- default-ubuntu-1404:     * service[apache2-default] action start (up to date)
-I, [2017-05-03T17:13:00.098798 #7295]  INFO -- default-ubuntu-1404:     * service[apache2-default] action enable (up to date)
-I, [2017-05-03T17:13:00.101219 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:13:00.102280 #7295]  INFO -- default-ubuntu-1404: Recipe: lamp::database
-I, [2017-05-03T17:13:00.169673 #7295]  INFO -- default-ubuntu-1404:   * mysql_client_installation_package[default] action create
-I, [2017-05-03T17:13:00.300682 #7295]  INFO -- default-ubuntu-1404:     * apt_package[mysql-client-5.5, libmysqlclient-dev] action install (up to date)
-I, [2017-05-03T17:13:00.302563 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:13:00.353640 #7295]  INFO -- default-ubuntu-1404:   * mysql_service[default] action create
-I, [2017-05-03T17:13:00.391916 #7295]  INFO -- default-ubuntu-1404:     * mysql_server_installation_package[default] action install
-I, [2017-05-03T17:13:00.462569 #7295]  INFO -- default-ubuntu-1404:       * apt_package[mysql-server-5.5] action install (up to date)
-I, [2017-05-03T17:13:00.466711 #7295]  INFO -- default-ubuntu-1404:       * apt_package[perl-Sys-Hostname-Long] action nothing (skipped due to action :nothing)
-I, [2017-05-03T17:13:00.469026 #7295]  INFO -- default-ubuntu-1404:       * execute[Initial DB setup script] action nothing (skipped due to action :nothing)
-I, [2017-05-03T17:13:00.470657 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:13:00.535511 #7295]  INFO -- default-ubuntu-1404:     * mysql_service_manager_upstart[default] action create
-I, [2017-05-03T17:13:00.540404 #7295]  INFO -- default-ubuntu-1404:       * group[mysql] action create (up to date)
-I, [2017-05-03T17:13:00.545163 #7295]  INFO -- default-ubuntu-1404:       * linux_user[mysql] action create (up to date)
-I, [2017-05-03T17:13:00.592094 #7295]  INFO -- default-ubuntu-1404:       * service[mysql] action stop (up to date)
-I, [2017-05-03T17:13:00.644234 #7295]  INFO -- default-ubuntu-1404:       * service[mysql] action disable (up to date)
-I, [2017-05-03T17:13:00.652041 #7295]  INFO -- default-ubuntu-1404:       * file[/etc/mysql/my.cnf] action delete (up to date)
-I, [2017-05-03T17:13:00.657123 #7295]  INFO -- default-ubuntu-1404:       * file[/etc/my.cnf] action delete (up to date)
-I, [2017-05-03T17:13:00.662502 #7295]  INFO -- default-ubuntu-1404:       * link[/usr/share/my-default.cnf] action create (skipped due to not_if)
-I, [2017-05-03T17:13:00.670231 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/mysql-default] action create (up to date)
-I, [2017-05-03T17:13:00.681284 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/mysql-default/conf.d] action create (up to date)
-I, [2017-05-03T17:13:00.689469 #7295]  INFO -- default-ubuntu-1404:       * directory[/run/mysql-default] action create (up to date)
-I, [2017-05-03T17:13:00.697346 #7295]  INFO -- default-ubuntu-1404:       * directory[/var/log/mysql-default] action create (up to date)
-I, [2017-05-03T17:13:00.705467 #7295]  INFO -- default-ubuntu-1404:       * directory[/var/lib/mysql-default] action create (up to date)
-I, [2017-05-03T17:13:00.726974 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/mysql-default/my.cnf] action create (up to date)
-I, [2017-05-03T17:13:00.805435 #7295]  INFO -- default-ubuntu-1404:       * apt_package[apparmor] action install (up to date)
-I, [2017-05-03T17:13:00.854003 #7295]  INFO -- default-ubuntu-1404:       * directory[/etc/apparmor.d/local/mysql] action create (up to date)
-I, [2017-05-03T17:13:00.863070 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apparmor.d/local/usr.sbin.mysqld] action create (up to date)
-I, [2017-05-03T17:13:00.878025 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apparmor.d/usr.sbin.mysqld] action create (up to date)
-I, [2017-05-03T17:13:00.891149 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/apparmor.d/local/mysql/default] action create (up to date)
-I, [2017-05-03T17:13:00.893397 #7295]  INFO -- default-ubuntu-1404:       * service[default apparmor] action nothing (skipped due to action :nothing)
-I, [2017-05-03T17:13:00.934853 #7295]  INFO -- default-ubuntu-1404:       * bash[default initial records] action run (skipped due to not_if)
-I, [2017-05-03T17:13:00.944801 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:13:00.945573 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:13:00.953766 #7295]  INFO -- default-ubuntu-1404:   * mysql_service[default] action start
-I, [2017-05-03T17:13:00.961166 #7295]  INFO -- default-ubuntu-1404:     * mysql_service_manager_upstart[default] action start
-I, [2017-05-03T17:13:00.974504 #7295]  INFO -- default-ubuntu-1404:       * template[/usr/sbin/mysql-default-wait-ready] action create (up to date)
-I, [2017-05-03T17:13:00.991588 #7295]  INFO -- default-ubuntu-1404:       * template[/etc/init/mysql-default.conf] action create (up to date)
-I, [2017-05-03T17:13:01.039587 #7295]  INFO -- default-ubuntu-1404:       * service[mysql-default] action start (up to date)
-I, [2017-05-03T17:13:01.043600 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:13:01.047453 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:13:01.082596 #7295]  INFO -- default-ubuntu-1404:   * mysql2_chef_gem_mysql2_chef_gem_mysql[default] action install
-I, [2017-05-03T17:13:01.085753 #7295]  INFO -- default-ubuntu-1404:   Recipe: build-essential::default
-I, [2017-05-03T17:13:01.113489 #7295]  INFO -- default-ubuntu-1404:     * build_essential[install_packages] action install
-I, [2017-05-03T17:13:01.630403 #7295]  INFO -- default-ubuntu-1404:       * apt_package[autoconf, binutils-doc, bison, build-essential, flex, gettext, ncurses-dev] action install (up to date)
-I, [2017-05-03T17:13:01.633443 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:13:01.639801 #7295]  INFO -- default-ubuntu-1404:     * mysql_client_installation_package[default] action create
-I, [2017-05-03T17:13:01.765632 #7295]  INFO -- default-ubuntu-1404:       * apt_package[mysql-client-5.5, libmysqlclient-dev] action install (up to date)
-I, [2017-05-03T17:13:01.768837 #7295]  INFO -- default-ubuntu-1404: (up to date)
-I, [2017-05-03T17:13:02.104568 #7295]  INFO -- default-ubuntu-1404:     * gem_package[mysql2] action install (up to date)
-I, [2017-05-03T17:13:02.106966 #7295]  INFO -- default-ubuntu-1404:      (up to date)
-I, [2017-05-03T17:13:02.108193 #7295]  INFO -- default-ubuntu-1404: Recipe: lamp::database
-I, [2017-05-03T17:13:02.149996 #7295]  INFO -- default-ubuntu-1404:   * mysql_database[my_company] action create (up to date)
-I, [2017-05-03T17:13:02.157363 #7295]  INFO -- default-ubuntu-1404:   * mysql_database_user[db_admin] action create (up to date)
-I, [2017-05-03T17:13:02.166888 #7295]  INFO -- default-ubuntu-1404:   * mysql_database_user[db_admin] action grant (up to date)
-I, [2017-05-03T17:13:02.169240 #7295]  INFO -- default-ubuntu-1404: Recipe: lamp::default
-I, [2017-05-03T17:13:02.180546 #7295]  INFO -- default-ubuntu-1404:   * directory[webapp] action create (up to date)
-I, [2017-05-03T17:13:02.196091 #7295]  INFO -- default-ubuntu-1404:   * remote_file[sample.war] action create
-I, [2017-05-03T17:13:02.201643 #7295]  INFO -- default-ubuntu-1404:     - create new file /var/tomcat8/webapps/sample.war
-I, [2017-05-03T17:13:02.204754 #7295]  INFO -- default-ubuntu-1404:     - update content in file /var/tomcat8/webapps/sample.war from none to 89b33c
-I, [2017-05-03T17:13:02.211857 #7295]  INFO -- default-ubuntu-1404:     (new content is binary, diff output suppressed)
-I, [2017-05-03T17:13:02.215685 #7295]  INFO -- default-ubuntu-1404: Recipe: tomcat8::default
-I, [2017-05-03T17:13:09.786408 #7295]  INFO -- default-ubuntu-1404:   * remote_file[/tmp/kitchen/cache/tomcat8.tar.gz] action create
-I, [2017-05-03T17:13:10.000636 #7295]  INFO -- default-ubuntu-1404:     - create new file /tmp/kitchen/cache/tomcat8.tar.gz
-I, [2017-05-03T17:13:10.003438 #7295]  INFO -- default-ubuntu-1404:     - update content in file /tmp/kitchen/cache/tomcat8.tar.gz from none to c77873
-I, [2017-05-03T17:13:10.006328 #7295]  INFO -- default-ubuntu-1404:     (new content is binary, diff output suppressed)
-I, [2017-05-03T17:13:10.009247 #7295]  INFO -- default-ubuntu-1404:     - change mode from '' to '0644'
-I, [2017-05-03T17:13:10.011373 #7295]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
-I, [2017-05-03T17:13:10.020684 #7295]  INFO -- default-ubuntu-1404:   * directory[/var/tomcat8] action create (up to date)
-I, [2017-05-03T17:13:10.582643 #7295]  INFO -- default-ubuntu-1404:   * bash[Extract tomcat archive] action run
-I, [2017-05-03T17:13:10.586617 #7295]  INFO -- default-ubuntu-1404:     - execute "bash"  "/tmp/chef-script20170503-21026-94scwl"
-I, [2017-05-03T17:13:10.602982 #7295]  INFO -- default-ubuntu-1404:   * template[/var/tomcat8/conf/server.xml] action create
-I, [2017-05-03T17:13:10.604756 #7295]  INFO -- default-ubuntu-1404:     - change mode from '0600' to '0644'
-I, [2017-05-03T17:13:10.618471 #7295]  INFO -- default-ubuntu-1404:   * template[/etc/init.d/tomcat8] action create
-I, [2017-05-03T17:13:10.621045 #7295]  INFO -- default-ubuntu-1404:     - create new file /etc/init.d/tomcat8
-I, [2017-05-03T17:13:10.621731 #7295]  INFO -- default-ubuntu-1404:     - update content in file /etc/init.d/tomcat8 from none to 77c9e9
-I, [2017-05-03T17:13:10.622562 #7295]  INFO -- default-ubuntu-1404:     --- /etc/init.d/tomcat8	2017-05-03 21:13:10.613018000 +0000
-I, [2017-05-03T17:13:10.623589 #7295]  INFO -- default-ubuntu-1404:     +++ /etc/init.d/.chef-tomcat820170503-21026-1mpb4fy	2017-05-03 21:13:10.613018000 +0000
-I, [2017-05-03T17:13:10.624508 #7295]  INFO -- default-ubuntu-1404:     @@ -1 +1,13 @@
-I, [2017-05-03T17:13:10.625044 #7295]  INFO -- default-ubuntu-1404:     +#!/bin/sh
-I, [2017-05-03T17:13:10.625705 #7295]  INFO -- default-ubuntu-1404:     +export JAVA_OPTS=-Xmx128M
-I, [2017-05-03T17:13:10.626398 #7295]  INFO -- default-ubuntu-1404:     +case "$1" in
-I, [2017-05-03T17:13:10.627170 #7295]  INFO -- default-ubuntu-1404:     +start)
-I, [2017-05-03T17:13:10.627909 #7295]  INFO -- default-ubuntu-1404:     +  /var/tomcat8/bin/startup.sh
-I, [2017-05-03T17:13:10.628595 #7295]  INFO -- default-ubuntu-1404:     +;;
-I, [2017-05-03T17:13:10.629106 #7295]  INFO -- default-ubuntu-1404:     +stop)
-I, [2017-05-03T17:13:10.629573 #7295]  INFO -- default-ubuntu-1404:     +  /var/tomcat8/bin/shutdown.sh
-I, [2017-05-03T17:13:10.630048 #7295]  INFO -- default-ubuntu-1404:     +;;
-I, [2017-05-03T17:13:10.630512 #7295]  INFO -- default-ubuntu-1404:     +*)
-I, [2017-05-03T17:13:10.631018 #7295]  INFO -- default-ubuntu-1404:     +  echo "Syntax: $0 <start|stop>"
-I, [2017-05-03T17:13:10.631603 #7295]  INFO -- default-ubuntu-1404:     +esac
-I, [2017-05-03T17:13:10.632194 #7295]  INFO -- default-ubuntu-1404:     - change mode from '' to '0755'
-I, [2017-05-03T17:13:10.632718 #7295]  INFO -- default-ubuntu-1404:     - change owner from '' to 'root'
-I, [2017-05-03T17:13:10.633297 #7295]  INFO -- default-ubuntu-1404:   * service[tomcat8] action enable[2017-05-03T21:13:10+00:00] WARN: only_if block for service[tomcat8] returned "true", did you mean to run a command? If so use 'only_if "true"' in your code.
-I, [2017-05-03T17:13:10.633743 #7295]  INFO -- default-ubuntu-1404: [2017-05-03T21:13:10+00:00] WARN: only_if block for service[tomcat8] returned "true", did you mean to run a command? If so use 'only_if "true"' in your code.
-I, [2017-05-03T17:13:10.840274 #7295]  INFO -- default-ubuntu-1404: 
-I, [2017-05-03T17:13:10.842852 #7295]  INFO -- default-ubuntu-1404:     - enable service service[tomcat8]
-I, [2017-05-03T17:13:10.845399 #7295]  INFO -- default-ubuntu-1404:   * service[tomcat8] action start[2017-05-03T21:13:10+00:00] WARN: only_if block for service[tomcat8] returned "true", did you mean to run a command? If so use 'only_if "true"' in your code.
-I, [2017-05-03T17:13:10.846463 #7295]  INFO -- default-ubuntu-1404: [2017-05-03T21:13:10+00:00] WARN: only_if block for service[tomcat8] returned "true", did you mean to run a command? If so use 'only_if "true"' in your code.
-I, [2017-05-03T17:13:11.032378 #7295]  INFO -- default-ubuntu-1404: 
-I, [2017-05-03T17:13:11.035074 #7295]  INFO -- default-ubuntu-1404:     - start service service[tomcat8]
-I, [2017-05-03T17:13:11.486400 #7295]  INFO -- default-ubuntu-1404: 
-I, [2017-05-03T17:13:11.488374 #7295]  INFO -- default-ubuntu-1404: Running handlers:
-I, [2017-05-03T17:13:11.490503 #7295]  INFO -- default-ubuntu-1404: Running handlers complete
-I, [2017-05-03T17:13:11.492468 #7295]  INFO -- default-ubuntu-1404: Chef Client finished, 7/213 resources updated in 24 seconds
-I, [2017-05-03T17:13:11.610371 #7295]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m53.41s).
+I, [2017-05-03T22:07:35.461917 #13793]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2017-05-03T22:07:35.464217 #13793]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2017-05-03T22:07:35.464621 #13793]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2017-05-03T22:07:35.465298 #13793]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.6.4...
+I, [2017-05-03T22:07:41.647634 #13793]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2017-05-03T22:07:41.670303 #13793]  INFO -- default-ubuntu-1404: Preparing data_bags
+I, [2017-05-03T22:07:41.671260 #13793]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2017-05-03T22:07:41.671724 #13793]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2017-05-03T22:07:41.754573 #13793]  INFO -- default-ubuntu-1404: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::AuthenticationFailed: Authentication failed for user vagrant@127.0.0.1>)
+I, [2017-05-03T22:07:42.834317 #13793]  INFO -- default-ubuntu-1404: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::AuthenticationFailed: Authentication failed for user vagrant@127.0.0.1>)
+I, [2017-05-03T22:07:43.913665 #13793]  INFO -- default-ubuntu-1404: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::AuthenticationFailed: Authentication failed for user vagrant@127.0.0.1>)
+I, [2017-05-03T22:07:44.993632 #13793]  INFO -- default-ubuntu-1404: [SSH] connection failed, retrying in 1 seconds (#<Net::SSH::AuthenticationFailed: Authentication failed for user vagrant@127.0.0.1>)
+W, [2017-05-03T22:07:46.069978 #13793]  WARN -- default-ubuntu-1404: [SSH] connection failed, terminating (#<Net::SSH::AuthenticationFailed: Authentication failed for user vagrant@127.0.0.1>)
+E, [2017-05-03T22:07:46.107172 #13793] ERROR -- default-ubuntu-1404: Converge failed on instance <default-ubuntu-1404>.
+E, [2017-05-03T22:07:46.107425 #13793] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2017-05-03T22:07:46.107457 #13793] ERROR -- default-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2017-05-03T22:07:46.107481 #13793] ERROR -- default-ubuntu-1404: Message: SSH session could not be established
+E, [2017-05-03T22:07:46.107504 #13793] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-05-03T22:07:46.107526 #13793] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-05-03T22:07:46.107548 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-05-03T22:07:46.107572 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-05-03T22:07:46.107596 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-05-03T22:07:46.107619 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-05-03T22:07:46.107642 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-05-03T22:07:46.107679 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-05-03T22:07:46.107702 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-05-03T22:07:46.107725 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-05-03T22:07:46.107748 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-05-03T22:07:46.107771 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-05-03T22:07:46.107812 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-05-03T22:07:46.107837 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-05-03T22:07:46.107860 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-05-03T22:07:46.107884 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-05-03T22:07:46.107907 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-05-03T22:07:46.107952 #13793] ERROR -- default-ubuntu-1404: ----End Backtrace-----
+E, [2017-05-03T22:07:46.107980 #13793] ERROR -- default-ubuntu-1404: ---Nested Exception---
+E, [2017-05-03T22:07:46.108003 #13793] ERROR -- default-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2017-05-03T22:07:46.108025 #13793] ERROR -- default-ubuntu-1404: Message: SSH session could not be established
+E, [2017-05-03T22:07:46.108047 #13793] ERROR -- default-ubuntu-1404: ----------------------
+E, [2017-05-03T22:07:46.108069 #13793] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2017-05-03T22:07:46.108091 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:83:in `rescue in call'
+E, [2017-05-03T22:07:46.108114 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/provisioner/base.rb:86:in `call'
+E, [2017-05-03T22:07:46.108137 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:384:in `block in converge_action'
+E, [2017-05-03T22:07:46.108160 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:527:in `synchronize_or_call'
+E, [2017-05-03T22:07:46.108183 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:489:in `block in action'
+E, [2017-05-03T22:07:46.108206 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2017-05-03T22:07:46.108233 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:488:in `action'
+E, [2017-05-03T22:07:46.108257 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:380:in `converge_action'
+E, [2017-05-03T22:07:46.108279 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:359:in `block in transition_to'
+E, [2017-05-03T22:07:46.108302 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `each'
+E, [2017-05-03T22:07:46.108326 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:358:in `transition_to'
+E, [2017-05-03T22:07:46.108349 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/instance.rb:135:in `converge'
+E, [2017-05-03T22:07:46.108371 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2017-05-03T22:07:46.108394 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2017-05-03T22:07:46.108425 #13793] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/test-kitchen-1.16.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2017-05-03T22:07:46.108523 #13793] ERROR -- default-ubuntu-1404: ----End Backtrace-----

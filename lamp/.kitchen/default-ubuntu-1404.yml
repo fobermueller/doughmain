@@ -4,4 +4,4 @@ port: '2222'
 username: vagrant
 ssh_key: "/home/fredobermueller/learn-chef/cookbooks/lamp/.kitchen/kitchen-vagrant/kitchen-lamp-default-ubuntu-1404/.vagrant/machines/default/virtualbox/private_key"
 last_action: converge
-last_error: 
+last_error: Kitchen::ActionFailed
